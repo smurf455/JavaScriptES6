@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>  
+    <script>
+        let Carro = function(){
+            this.cor = 'Vermelho'
+            this.modelo = 'Conversivel'
+            this.velocidadeAtual = 0
+            this.velocidadeMaxima = 180
+
+            
+            this.acelerar = function(){
+               // this.velocidadeAtual += 10
+
+               let velocidade = this.getVelocidadeAtual() + 50
+               if(velocidade > this.velocidadeMaxima){
+                velocidade = this.velocidadeMaxima
+               }
+                this.setVelocidadeAtual(velocidade)
+            }
+            // funcão get com o unico objetivo de retornar o valor da velocidade
+            this.getVelocidadeAtual = function(){
+                return this.velocidadeAtual 
+            }
+            // e função set que tem o objetivo de atualizar o valor da velocidade atual, a medida que é modificado
+            this.setVelocidadeAtual  = function(velocidadeAtual){
+                this.velocidadeAtual = velocidadeAtual
+            }
+        }
+         // Instancia da funcão carro a um objeto
+            let carro = new Carro()
+            
+            carro.acelerar()
+            console.log(carro.velocidadeAtual)
+            carro.acelerar()
+            console.log(carro.velocidadeAtual)
+            carro.acelerar()
+            console.log(carro.velocidadeAtual)
+            carro.acelerar()
+            console.log(carro.velocidadeAtual)
+            carro.acelerar()
+            console.log(carro.velocidadeAtual)
+
+
+            let Carro2 = function(){
+
+             var velocidadeMaxima = 180
+
+             var quilometrosRodados = 0
+             
+            this.cor = 'Vermelho'
+            this.modelo = 'Conversivel'
+            this.velocidadeAtual = 0
+            
+
+            
+            this.acelerar = function(){
+               // this.velocidadeAtual += 10
+
+               
+               let velocidade = this.getVelocidadeAtual() + 50
+               if(velocidade > velocidadeMaxima){
+                velocidade = velocidadeMaxima
+               }
+                this.setVelocidadeAtual(velocidade)
+                
+                setQuilometrosRodados(0.07)
+                console.log(quilometrosRodados)
+            }
+            // funcão get com o unico objetivo de retornar o valor da velocidade
+            this.getVelocidadeAtual = function(){
+                return this.velocidadeAtual 
+            }
+            // e função set que tem o objetivo de atualizar o valor da velocidade atual, a medida que é modificado
+            this.setVelocidadeAtual  = function(velocidadeAtual){
+                this.velocidadeAtual = velocidadeAtual
+            }
+            //Criando uma função com privada para incrementar a quilometragem, para isso utilizando uma variavel, pois assim não se faz
+            // necessario o uso do this o que torna a função pública 
+            var setQuilometrosRodados = function(q){
+                quilometrosRodados += q
+            }
+        }
+        
+         // Instancia da funcão carro a um objeto
+            let carro2 = new Carro2()
+
+            carro2.acelerar()
+            console.log(carro.velocidadeAtual)
+            carro2.acelerar()
+            console.log(carro.velocidadeAtual)
+            carro2.acelerar()
+            console.log(carro.velocidadeAtual)
+            carro2.acelerar()
+            console.log(carro.velocidadeAtual)
+            carro2.acelerar()
+            console.log(carro.velocidadeAtual)
+
+            carro2.velocidadeMaxima = 220
+            console.log(carro)
+            console.log(carro2)
+            
+
+    </script>
+</body>
+</html>

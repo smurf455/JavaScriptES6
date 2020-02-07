@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //strings 
+        let pessoa = 'Olá eu sou o goku'
+
+        console.log(pessoa)
+        console.log(...pessoa)
+        
+
+        //Arrays
+
+        let listaCursos = ['Html, CSS E JAVASCRIPT']
+        let listaCursos2 = ['PHP, MYSQL']
+        let listaCursosCompleto = ['WebCompleto', ...listaCursos2 ,...listaCursos]
+
+        console.log(listaCursosCompleto)
+        
+
+        //objetos
+
+        let pessoa2 = {nome: 'William', profissao:'estudante'}
+        let complemento = {...pessoa2 ,endereco: 'Casa do caralho', }
+
+        console.log(complemento)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<script>
+			//escopo global, de função e de bloco
+
+				var serie = 'Vikings'
+
+				{
+					//nesse caso a variavel serie que possui Supernatural irá sobreescrever a variavel que possui o valor Vikings pois ela irá subir um nivel, de escopo de bloco para escopo global
+					var serie = 'Supernatural'
+					console.log('Dentro do bloco ' + serie)
+				}
+
+				console.log('Fora do bloco' + serie)
+
+		</script>
+
+	</head>
+
+	<body>
+
+	</body>
+	</html>

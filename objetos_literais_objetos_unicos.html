@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <script>
+        let Carro = {
+            marca: 'Ferrari',
+            modelo: 'Conversivel',
+
+        }
+
+        // Nesse caso x recebe a referencia para o objeto literal, dessa forma agora Carro e X apontam para o mesmo objeto literal
+        let x = Carro
+
+        console.log(Carro.modelo)
+        console.log(x.modelo)
+
+        // Dessa forma após o valor do modelo ser alterado, tanto x quanto Carro irão apontar para o novo valor de carro
+        x.modelo = 'Mercedes'
+
+        console.log(x.modelo)
+        console.log(Carro.modelo)
+
+
+    </script>    
+</body>
+</html>

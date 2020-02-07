@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Operador Const</title>
+		<meta charset="utf-8">
+	</head>
+
+
+	<body>
+		<script>
+			const SERIE = 'Akami Ga Kill'
+
+			function x (){
+				const SERIE = 'Nanatsu no Tanzai'
+				console.log('Dentro da função ' + SERIE)
+			}
+
+			x()
+
+			console.log('Escopo global ' + SERIE)
+		</script>
+	</body>
+	</html>

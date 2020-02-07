@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Pilar do molimorfismo</title>
+	</head>
+	<body>
+		<script>
+			class Animal{
+				constructor(cor, tamanho, peso){
+					this.cor = cor
+					this.tamanho = tamanho
+					this.peso = peso
+				}
+
+				Dormir(){
+					console.log('Dormindo')
+				}
+
+			}	
+
+
+			class Passaro extends Animal{
+				constructor(cor , tamanho, peso){
+					super(cor, tamanho, peso)
+					
+				}
+
+				Voar(){
+					console.log('Voei')
+				}
+			}
+
+			class Papagaio extends Passaro{
+				constructor(sabeFalar, cor, tamanho, peso){
+					super('Grande', cor, tamanho, peso)
+					this.sabeFalar = sabeFalar
+				}
+			}
+
+			class Avestruz extends Passaro{
+				constructor(cor, tamanho, peso){
+					super(cor, tamanho,peso)
+
+				}
+
+				enterrarCabeca(){
+
+				}
+
+				voar(){
+					console.log('Não sabe voar')
+				}
+			}
+			
+			let avestruz = new Avestruz('preto' ,30, 40)
+			console.log(avestruz)
+			avestruz.voar()
+
+
+
+		</script>
+	</body>
+	</html>

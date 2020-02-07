@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Objetos literais</title>
+	</head>
+	<body>
+		<script>
+			
+			class Produto{
+				constructor(descricao, preco){
+					this.descricao = descricao
+					this.preco = preco
+				}
+
+				verDescricao(){
+					console.log(`${this.descricao}, por apenas ${this.preco}`)	
+			}	
+		}
+			let produto = new Produto('Computador', 4000)
+			produto.verDescricao()
+
+			let objetoLiteral = {
+				descricao: 'Notebook',
+				preco: 4000,
+				verDescricao: function(){
+					console.log(`${this.descricao}, por apenas ${this.preco}`)	
+				}
+			}
+
+			objetoLiteral.verDescricao()
+		</script>
+	</body>
+	</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let ComputadorFactory = function(processador, memoria, ssd, hd){ 
+            return{
+                processador,
+                memoria,
+                ssd,
+                hd,
+                ligarComputador(){
+                    console.log('O windows está sendo iniciado')
+                }
+            }
+        }
+
+        let computador1 = ComputadorFactory('i5', 16, 240, '1TB')
+        console.log(computador1)
+
+        let computador2 = ComputadorFactory('i7', 32, '2TB', '1TB')
+        console.log(computador2)
+
+
+        computador1.ligarComputador()
+    </script>   
+</body>
+</html>

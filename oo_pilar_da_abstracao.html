@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <script>
+        /*
+        class Cadeira{
+            constructor(qtd_pernas, giratoria, cor){
+                this.qtd_pernas = qtd_pernas
+                this.giratoria = giratoria
+                this.cor = cor
+            }
+
+            girarCadeira(){
+                if(this.giratoria === true){
+                    console.log('A cadeira girou')
+                } else {
+                    console.log('A cadeira não é giratoria')
+                }
+            }
+        }    
+
+            let cadeiras = Array()
+
+            cadeiras.push(new Cadeira(3, true, 'Laranja'))
+            cadeiras.push(new Cadeira(4, false, 'Vermelha'))
+            cadeiras.push(new Cadeira(1, true, 'Preta'))
+
+            console.log(cadeiras)
+            */
+        //Desafio Sofá
+
+            class Sofa{
+                constructor(qtd_lugares, reclinavel, cor){
+                    this.qtd_lugares = qtd_lugares
+                    this.reclinavel = reclinavel
+                    this.cor = cor
+                }
+
+                Reclinavel(){
+                    if(this.reclinavel === true){
+                        console.log(' O sofá é reclinavel')
+                    } else{
+                        console.log(' O sofá não é reclinavel')
+                    }
+                }
+            }
+            
+
+            let sofas = Array()
+            sofas.push(new Sofa(2, true, 'Verde'))
+            sofas.push(new Sofa(1, false, 'Vermelho'))
+            sofas.push(new Sofa(3, false, 'Laranja'))
+
+            console.log(sofas)
+            sofas[0].Reclinavel()
+    </script>    
+    
+</body>
+
+</html>

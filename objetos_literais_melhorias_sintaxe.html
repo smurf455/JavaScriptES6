@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Objetos literais melhorias na sintaxe</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+
+		<script>
+
+			function formulario(){
+				let nome = document.getElementById('nome').value
+				let idade = document.getElementById('idade').value
+				let profissao = document.getElementById('profissao').value
+				let sexo = document.getElementById('sexo').value
+
+				recuperar = {
+					nome,
+					idade,
+					profissao,
+					sexo,
+				
+					exibirCampos(){
+						console.log(`${this.nome}, ${this.idade}, ${this.profissao}, ${this.sexo} `)
+					}
+				}
+
+				console.log(recuperar)
+				recuperar.exibirCampos()
+
+				}
+
+		</script>
+
+		<form>
+			<input type="text" placeholder="digite seu nome" id="nome">
+			<input type="number" placeholder="digite sua idade" id="idade">
+			<br><br>
+			<input type="text" placeholder="digite sua profissão" id="profissao">
+			<select id="sexo">
+				<option>masculino</option>
+				<option>feminino</option>
+			</select>
+			<button type="button" onclick="formulario()">Enviar</button>
+		</form>
+		
+	</body>
+	</html>

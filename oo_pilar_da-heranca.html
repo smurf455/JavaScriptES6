@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script>
+			class Animal{
+				constructor(){
+					this.cor = 'Marron e branco'
+					this.tamanho = 30
+					this.peso = 40
+				}
+
+				Dormir(){
+					console.log('Dormindo')
+				}
+
+			}	
+
+			
+
+			class Cachorro extends Animal{
+
+				constructor(){
+					super()
+					this.orelhas = 'Grandes'
+				}
+
+				Correr(){
+					console.log('Correndo')
+				}
+
+				Rosnar(){
+					console.log('AuAu')
+				}
+			}
+
+			class Passaro extends Animal{
+				constructor(){
+					super()
+					this.bico = 'curto'
+				}
+
+				Voar(){
+					console.log('Voei')
+				}
+			}
+
+			class Papagaio extends Passaro{
+				constructor(){
+					super()
+					this.bico = 'Medio'
+					this.sabeFalar = true
+				}
+			}
+
+			let papagaio = new Papagaio()
+			let cachorro = new Cachorro()
+			let passaro = new Passaro()
+
+			passaro.Dormir()
+			cachorro.Rosnar()
+			papagaio.Dormir()
+
+			console.log(papagaio)
+
+			console.log(cachorro)
+
+			console.log(passaro)
+
+		</script>
+	</body>
+	</html>

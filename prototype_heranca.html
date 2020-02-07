@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        Object.prototype.atb5 = 'Cachorro'
+        Object.prototype.atb7 = 'Gato'
+
+        let animal = {atb1: 'Macaco'}
+        let vertebrado = {__proto__:animal, atb2:'Sapo'}
+        let ave = {__proto__: vertebrado, atb3: 'Aguia'}
+
+        console.log(ave.atb2, ave.atb1, ave.atb5 ,ave.atb7)
+    </script>
+</body>
+</html>
